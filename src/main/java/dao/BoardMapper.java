@@ -1,5 +1,9 @@
 package dao;
 
-public interface BoardMapper {
+import java.util.List;
 
+import model.BoardVO;
+
+public interface BoardMapper {
+  List<BoardVO> getAll();
 }

@@ -17,8 +17,9 @@
 	UserService userSrv = Factory.INSTANCE.getUserSrv();
 	UserDTO dto = userSrv.getOne(loginInfo);
 	
-	//있는 회원이면
 	if(dto!=null){
+	  session.setAttribute("userid",dto.getUserid());
+	  session.setAttribute("name", dto.getName());
 	  response.sendRedirect("./list.jsp");
 	}else{
 	  response.sendRedirect("./login.jsp");

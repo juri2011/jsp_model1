@@ -1,17 +1,17 @@
 package model;
 
-import java.io.Serializable;
 import java.sql.Date;
 
-import lombok.Getter;
+import lombok.ToString;
+
 import lombok.Setter;
+
+import lombok.Getter;
 
 @Getter
 @Setter
-public class BoardVO implements Serializable{
-
-  private static final long serialVersionUID = 1L;
-  
+@ToString
+public class BoardDTO {
   private int seq;
   private String title;
   private String content;
