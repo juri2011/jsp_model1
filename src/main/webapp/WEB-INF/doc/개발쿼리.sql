@@ -49,3 +49,7 @@ alter table board rename column nickname to name;
 select * from board where seq = 1;
 
 update board set cnt = cnt+1 where seq=1;
+
+update board set title='미니게시판에 오신 걸 환영합니다', content='첫번째 게시글입니다' where seq = 1;
+
+delete from board where seq=3;

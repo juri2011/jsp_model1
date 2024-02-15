@@ -12,7 +12,7 @@
 		<h1>로그인</h1>
 		<form action="./loginCtrl.jsp" method="post">
 			<fieldset>
-				<legend>미니블로그 로그인</legend>
+				<legend>미니게시판 로그인</legend>
 				<ul>
 					<li>
 						<label for="userid">아이디</label>

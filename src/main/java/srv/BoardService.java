@@ -8,4 +8,7 @@ public interface BoardService {
   List<BoardDTO> getAll();
   BoardDTO getOne(int seq);
   void increaseCnt(int seq);
+  void update(BoardDTO dto);
+  void save(BoardDTO dto);
+  void delete(int seq);
 }

@@ -19,4 +19,17 @@
 		update board set cnt = cnt+1 where seq=#{seq};
 	</update>
 	
+	<update id="update" parameterType="bVo">
+		update board set title=#{title}, content=#{content} where seq = #{seq};
+	</update>
+	
+	<update id="save" parameterType="bVo">
+		insert into board(title, content, userid, name) value
+		(#{title},#{content},#{userid},#{name});
+	</update>
+	
+	<delete id="delete">
+		delete from board where seq=#{seq};
+	</delete>
+	
 </mapper>

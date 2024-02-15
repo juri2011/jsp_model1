@@ -61,4 +61,30 @@ public class BoardServiceImpl implements BoardService{
     boardDao.increaseCnt(seq);
   }
 
+	@Override
+	public void update(BoardDTO dto) {
+		BoardVO vo = new BoardVO();
+		vo.setSeq(dto.getSeq());
+		vo.setTitle(dto.getTitle());
+		vo.setContent(dto.getContent());
+		
+		boardDao.update(vo);
+	}
+
+	@Override
+	public void save(BoardDTO dto) {
+		BoardVO vo = new BoardVO();
+		vo.setUserid(dto.getUserid());
+		vo.setName(dto.getName());
+		vo.setTitle(dto.getTitle());
+		vo.setContent(dto.getContent());
+		
+		boardDao.save(vo);
+	}
+
+	@Override
+	public void delete(int seq) {
+		boardDao.delete(seq);
+	}
+
 }

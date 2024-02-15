@@ -22,7 +22,6 @@
 <body>
 	<div id="wrap">
 		<h1>게시글 상세</h1>
-		<!-- ui 수정할 예정 -->
 		<form action="./editCtrl.jsp" method="post">
 		<input type="hidden" name="seq" value="${dto.seq}"/>
 			<fieldset>
@@ -56,9 +55,9 @@
                    </tbody>  
 				</table>
 			</fieldset>
+			<button>글수정</button>
 		</form>
 		<ul>
-			<li><a href="./editCtrl">글수정</a></li>
 			<li><a href="./deleteCtrl.jsp?seq=${dto.seq}">글삭제</a></li>
 			<li><a href="./list.jsp">목록으로</a></li>
 		</ul>

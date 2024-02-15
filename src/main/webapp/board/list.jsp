@@ -25,6 +25,7 @@
 <body>
 	<div id="wrap">
 		<h1>${name}님의 게시판</h1>
+		<p><a href="./write.jsp">글쓰기</a></p>
 		<table>
 			<thead>
 				<tr>
