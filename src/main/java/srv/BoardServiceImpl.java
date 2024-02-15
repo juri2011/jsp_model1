@@ -39,4 +39,26 @@ public class BoardServiceImpl implements BoardService{
     return list;
   }
 
+  @Override
+  public BoardDTO getOne(int seq) {
+    BoardVO vo = boardDao.getOne(seq);
+    BoardDTO dto = null;
+    if(vo!=null) {
+      dto = new BoardDTO();
+      dto.setCnt(vo.getCnt());
+      dto.setContent(vo.getContent());
+      dto.setName(vo.getName());
+      dto.setRegdate(vo.getRegdate());
+      dto.setSeq(vo.getSeq());
+      dto.setTitle(vo.getTitle());
+      dto.setUserid(vo.getUserid());
+    }
+    return dto;
+  }
+
+  @Override
+  public void increaseCnt(int seq) {
+    boardDao.increaseCnt(seq);
+  }
+
 }

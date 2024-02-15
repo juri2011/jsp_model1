@@ -15,4 +15,8 @@
 		select * from board order by seq desc;
 	</select>
 	
+	<update id="increaseCnt">
+		update board set cnt = cnt+1 where seq=#{seq};
+	</update>
+	
 </mapper>

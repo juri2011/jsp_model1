@@ -2,7 +2,8 @@
 <%@page import="ioc.Factory"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!-- 뒤로가기를 눌러도 자동으로 새로고침이 되었으면 좋겠다 -->
 <%
 	if(session.getAttribute("userid")==null){
 	  response.sendRedirect("./login.jsp");

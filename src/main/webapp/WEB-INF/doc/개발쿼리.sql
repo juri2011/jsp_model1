@@ -44,3 +44,8 @@ insert into board(title, content, userid, nickname) value
 alter table user drop name;
 alter table user rename column nickname to name;
 alter table board rename column nickname to name;
+
+
+select * from board where seq = 1;
+
+update board set cnt = cnt+1 where seq=1;
