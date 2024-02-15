@@ -1,4 +1,4 @@
-package com.study.jsp.filter;
+package filter;
 
 import java.io.IOException;
 

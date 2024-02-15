@@ -13,10 +13,10 @@
 		<ul>
 		<!-- 나중에 c:if를 통해 로그인이 된 사람은 로그아웃메뉴만,
 		로그아웃 상태인 사람은 로그인 메뉴만 보이게 처리 -->
-			<li><a href="">로그인</a></li>
-			<li><a href="">로그아웃</a></li>
-			<li><a href="">글목록</a></li>
-			<li><a href="">글쓰기</a></li>
+			<li><a href="./board/login.jsp">로그인</a></li>
+			<li><a href="./board/logout.jsp">로그아웃</a></li>
+			<li><a href="./board/list.jsp">글목록</a></li>
+			<li><a href="./board/write.jsp">글쓰기</a></li>
 		<!-- 회원가입도 있었으면 좋겠다 -->
 		</ul>	
 	</div>

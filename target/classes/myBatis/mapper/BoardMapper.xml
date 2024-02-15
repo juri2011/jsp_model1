@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-<mapper namespace="com.study.jsp.dao.BoardMapper">
+<mapper namespace="dao.BoardMapper">
 	<cache />
 	
 	<!-- int는 기본타입이므로 parameterType을 굳이 쓰지 않는다. -->

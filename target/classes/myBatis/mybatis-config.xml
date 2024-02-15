@@ -4,8 +4,8 @@
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-		<typeAlias type="com.study.jsp.model.UserVO" alias="uVo"/>
-		<typeAlias type="com.study.jsp.model.BoardVO" alias="bVo"/>
+		<typeAlias type="model.UserVO" alias="uVo"/>
+		<typeAlias type="model.BoardVO" alias="bVo"/>
 	</typeAliases>
 	
   <!-- DB 연결정보 설정 -> 마이바티즈 자동 연결(나중에 이 부분은 스프링 설정파일 root-context.xml 파일로 이동하게 된다.) -->
@@ -33,7 +33,7 @@ poolPingConnectionsNotUsedFor : 유휴상태의 커넥션이 닫히는지 판단
 poolTimeToWait : 사용된 커넥션을 기다리는 시간
  -->      
         <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/mvc1"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/myMvc1"/>
         <property name="username" value="juri"/>
         <property name="password" value="1102"/>
       </dataSource>
@@ -43,6 +43,6 @@ poolTimeToWait : 사용된 커넥션을 기다리는 시간
   <mappers>
     <!-- SQL 쿼리를 정의한 xml 설정파일-->
     <mapper resource="myBatis/mapper/UserMapper.xml"/>
-    <mapper resource="myBatis/mapper/BoardMapper.xml"/>
+    <!-- <mapper resource="myBatis/mapper/BoardMapper.xml"/> -->
   </mappers>
 </configuration>

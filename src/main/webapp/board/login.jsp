@@ -9,7 +9,8 @@
 </head>
 <body>
 	<div id="wrap">
-		<form action="" method="post">
+		<h1>로그인</h1>
+		<form action="./loginCtrl.jsp" method="post">
 			<fieldset>
 				<legend>미니블로그 로그인</legend>
 				<ul>

@@ -18,6 +18,13 @@ create table board(
 	title varchar(50) not null,
 	content text not null,
 	userid varchar(50) not null,
-	nickname
-	regdate
-)
+	nickname varchar(50) not null,
+	regdate datetime default now(),
+	cnt int default 0
+) default character set utf8;
+
+desc board;
+
+insert into user (userid, password, name, nickname, role) values
+('juri', '1234', '오주리', '<관리자>주리', 'Admin'),
+('duly', '5678', '둘리', '아기공룡둘리', 'User');
